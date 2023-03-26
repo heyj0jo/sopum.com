@@ -1,0 +1,10 @@
+export {default as About} from "./about/About.jsx"
+export {default as Home} from "./home/Home.jsx"
+export {default as Navbar} from "./navbar/Navbar.jsx"
+export {default as Hero} from './Hero.jsx'
+export {default as Products} from './products/Products.jsx'
+export {default as Contact} from './contact/Contact.jsx'
+export {default as Signup} from './signup/Signup.jsx'
+export {default as Content} from './Content.jsx'
+export {default as Footer} from './Footer.jsx'
+export {default as Product} from './products/Product.jsx'
