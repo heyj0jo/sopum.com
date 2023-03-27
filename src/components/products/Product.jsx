@@ -13,7 +13,7 @@ function Product(prop) {
   }
 
   useEffect(()=>{
-    AOS.init({duration: 1500});
+    AOS.init({duration: 2000});
   }, []);
 
   return (

@@ -1,20 +1,24 @@
 import React from 'react'
 import './about.css'
-import {Hero, Content, Footer} from '../../components'
+import {Hero, Content, Footer, Navbar} from '../../components'
 import AboutImg from "../../assets/sopum4.jpeg"
 
 function About() {
   const top = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+  
   return (
     <div>
+      <Navbar 
+        bgcolor = "rgb(180, 72, 22)"
+      />
       <button className='toTop'onClick={top} >
         <i className='fa-sharp fa-solid fa-arrow-up'></i> 
       </button>  
       <Hero
         cName="about-hero"
-        heroImg="https://www.kkday.com/ko/blog/wp-content/uploads/korea_seoul_shops_6_3.jpg"
+        yesImg={false}
         title="About"
         textCName = "about-text"
         text="So who are we?"

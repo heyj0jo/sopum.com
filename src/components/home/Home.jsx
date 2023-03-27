@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {Hero, Navbar, Content, Footer} from "../../components";
+import {Hero, Navbar, Footer} from "../../components";
 import './home.css'
 import HomeImg from "../../assets/sopum3.png"
 import AOS from 'aos'
@@ -16,11 +16,16 @@ function Home() {
 
   return (
     <div>
+      <Navbar
+        bgcolor = "var(--main-color)"
+      />
         <button className='toTop'onClick={top} >
           <i className='fa-sharp fa-solid fa-arrow-up'></i> 
-        </button>  
+        </button>
+
         <Hero 
             cName="hero"
+            yesImg={true}
             heroImg={HomeImg}
             title="Welcome to SoPum"
             textCName="hero-text"

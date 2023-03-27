@@ -1,6 +1,6 @@
 .signup {
     height: 100vh;
-    background-color: var(--main-color);
+    background-color: var(--login-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,4 +46,5 @@
 
 .signup .copy {
     position: absolute;
+    padding: 1rem;
 }

@@ -1,6 +1,6 @@
-.contact {
+.contact-page {
     height: 100vh;
-    background-color: rgb(38, 64, 34);
+    background-color: var(--contact-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,27 +8,28 @@
     color: var(--white-color);
 }
 
-.contact form {
+.contact-page form {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.contact h1 {
-    padding: 3rem;
+.contact-page h1 {
+    padding: 2rem;
 }
 
-.contact input {
+.contact-page input {
     border: none;
     border-bottom: 2px solid white;
     background-color: transparent;
     margin: 0 1rem 2rem;
+    color: white;
 }
 
 #msg {
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 1rem;
 }
 
@@ -54,7 +55,12 @@
     color: white;
 }
 
-.contact .copy {
+.contact-page .copy {
     position: absolute;
     margin: 1rem;
+}
+
+.hidden {
+    text-decoration: none;
+    color: var(--white-color);
 }

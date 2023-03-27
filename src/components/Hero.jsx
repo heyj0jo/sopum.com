@@ -9,7 +9,9 @@ function Hero(props) {
   
   return (
     <div className={props.cName}>
-        <img src={props.heroImg} alt="banner"/>
+        {props.yesImg &&
+          <img src={props.heroImg} alt=""/>
+        }
         <div className={props.textCName}>
           <h1 data-aos="fade-up">{props.title}</h1>
           <p data-aos="fade-up">

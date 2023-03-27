@@ -1,12 +1,27 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
+import {Navbar} from '../'
 import './contact.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 function Contact() {
+  useEffect(()=>{
+    AOS.init({duration: 1000});
+  }, []);
+    
   const [inputs, setInputs] = useState({
     name: "",
     email: "",
     msg: ""
   });
+
+  const [approved, setApproved] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    localStorage.setItem(name, JSON.stringify(inputs));
+  };
 
   const {name, email, msg} = inputs;
 
@@ -17,38 +32,39 @@ function Contact() {
         ...inputs,
         [id]: value
     });
+    console.log(inputs);
   }
-
-  const handleSubmit = (e) => {
-
-  }
-
+  
   return (
-    <div className='contact'>
-        <h1>Contact us here!</h1>
-        <form onSubmit={handleSubmit}>
-            <label>Name:
-                <input type="text" id='name' value={name} onChange={handleChange} /> 
-            </label>
-            
-            <label>Email: 
-                <input type="text" id='email' value={email} onChange={handleChange}/>
-            </label>
-            <label>Question/Note/etc: </label>
-            <textarea id='msg' value={msg} placeholder="Start typing here" onChange={handleChange}
-            rows={4} cols={30}/>
-            <input type="submit" value="Submit" className='button' />
-        </form>
+    <div>
+        <Navbar />
+            <div className='contact-page'>
+            <h1 data-aos="fade-up">Contact us here!</h1>
+            <form data-aos="fade-up" onSubmit={handleSubmit}>
+                <label>Name:
+                    <input type="text" id='name' value={name} onChange={handleChange} /> 
+                </label>
+                
+                <label>Email: 
+                    <input type="text" id='email' value={email} onChange={handleChange}/>
+                </label>
+                <label>Question/Note/etc: </label>
+                <textarea id='msg' value={msg} placeholder="Start typing here" onChange={handleChange}
+                rows={4} cols={30}/>
+                <input type="submit" value="Submit" className='button' />
+            </form>
 
-        <div className='socialLinks'>
-            <a href="#">
-                <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-                <i className="fa-regular fa-store"></i>
-            </a>
+            <div className='socialLinks' data-aos="fade-up">
+                <a href="#">
+                    <i className="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i className="fa-regular fa-store"></i>
+                </a>
+            </div>
+
+            <p className='copy'>&copy;2023 by Sopum</p>
         </div>
-        <p className='copy'>&copy;2023 by Sopum</p>
     </div>
   )
 }
@@ -69,8 +85,5 @@ constructor(props) {
 handleChange(event) {
     this.setState({value: event.target.value});
 }
-
-
-
 
 */

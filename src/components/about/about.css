@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(180, 72, 22);
 }
 
 .about-hero img {
@@ -17,16 +18,11 @@
     top: 45%;
     text-align: center;
     color: white;
-    text-shadow: 3px 3px #ff0000;
 }
 
 .about-text h1 {
     font-size: 4rem;
     letter-spacing: 5px;
-}
-
-.about-text:hover {
-    text-shadow: 3px 3px black;
 }
 
 .about-content {
@@ -49,4 +45,24 @@
 .about-content-description h2, 
 .about-content-description p{
     padding: 2rem 0;
+}
+
+@media screen and (max-width: 840px) {
+    .about-content {
+        display: block;
+    }
+    .about-content img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-content-description h2,
+    .about-content-description p {
+        padding: 1.5rem 0;
+        text-indent: 50px;
+    }
+
+    .about-content-description p {
+        text-indent: 50px;
+    }
 }

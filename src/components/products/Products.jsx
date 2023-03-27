@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import {Hero, Footer, Product} from '../../components'
+import {Hero, Footer, Product, Navbar} from '../../components'
 import './products.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { CSSTransition } from 'react-transition-group'
 
 const Products = () => {
+  const bgcolor = "#e7b100"
   useEffect(()=>{
     AOS.init({duration:1000})
   }, []);
@@ -15,13 +15,17 @@ const Products = () => {
   }
 
   return (
-    <div className='products-page'>
+    <div className='products-page' style={{backgroundColor: bgcolor}}>
+      <Navbar 
+        bgcolor = {bgcolor}
+      />
       <button className='toTop'onClick={top} >
         <i className='fa-sharp fa-solid fa-arrow-up'></i> 
       </button>  
       <Hero 
-        cName = "product-hero"
-        heroImg = "https://blog.kakaocdn.net/dn/n664g/btrkJ5BwCSI/K6ClYTXwDLe04NT14DuyqK/img.jpg"
+        cName = "products-hero"
+        yesImg = {false}  // see the css file
+        // heroImg = "https://blog.kakaocdn.net/dn/n664g/btrkJ5BwCSI/K6ClYTXwDLe04NT14DuyqK/img.jpg"
         title = "Products"
         textCName = "products-text"
         text = "Find what you need"
@@ -43,7 +47,7 @@ const Products = () => {
         type = {true}
       />
 
-      <Footer />
+      <Footer/>
     </div>
   )
 }
