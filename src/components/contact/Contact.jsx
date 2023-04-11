@@ -18,9 +18,22 @@ function Contact() {
 
   const [approved, setApproved] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     localStorage.setItem(name, JSON.stringify(inputs));
+    console.log(inputs);
+
+    const inputJSON = {"key":inputs.name, "value":inputs};
+    const result = await fetch("https://272.selfip.net/apps/ImOTG6acTe/collections/demo/documents/",{
+      method:"POST",
+      headers: {
+        'Content-Type' :  "application/json"
+      },
+      body: JSON.stringify(inputJSON)
+
+    })
+    const resultJSON = await result.json();
+    console.log(resultJSON);
   };
 
   const {name, email, msg} = inputs;

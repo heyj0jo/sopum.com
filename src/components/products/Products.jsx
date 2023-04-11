@@ -25,10 +25,9 @@ const Products = () => {
       <Hero 
         cName = "products-hero"
         yesImg = {false}  // see the css file
-        // heroImg = "https://blog.kakaocdn.net/dn/n664g/btrkJ5BwCSI/K6ClYTXwDLe04NT14DuyqK/img.jpg"
         title = "Products"
         textCName = "products-text"
-        text = "Find what you need"
+        text = "Check our bestsellers"
       />
       
       <Product

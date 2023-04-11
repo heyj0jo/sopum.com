@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--products-color);
+    font-family: 'Abril Fatface', cursive;
 }
 
 .products-hero img {
@@ -25,6 +26,10 @@
     letter-spacing: 5px;
 }
 
+.products-text p {
+    font-family: 'Sintony', sans-serif;
+}
+
 .products-content {
     display: flex;
     align-items: center;
@@ -38,22 +43,16 @@
 }
 
 .products-content-description {
+    flex-direction: column;
     width: 50%;
     text-align: center;
 }
 
 .products-content-description h2 {
     font-size: 2rem;
-    
 }
 
-.products-content-description h2:hover {
-    text-decoration: underline;
+.products-content-description p {
+    font-family: 'Sintony', sans-serif;
 }
 
-.hidden-text {
-    position: absolute;
-    width: 50%;
-    text-align: center;
-    padding: 1rem 0 0 0;
-}

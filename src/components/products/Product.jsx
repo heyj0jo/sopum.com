@@ -4,13 +4,13 @@ import 'aos/dist/aos.css'
 import './products.css'
 
 function Product(prop) {
-  const [isHover, setHover] = useState(false);
-  const handleMouseOver = () => {
-    setHover(true);
-  }
-  const handleMouseOut = () => {
-    setHover(false);
-  }
+//   const [isHover, setHover] = useState(false);
+//   const handleMouseOver = () => {
+//     setHover(true);
+//   }
+//   const handleMouseOut = () => {
+//     setHover(false);
+//   }
 
   useEffect(()=>{
     AOS.init({duration: 2000});
@@ -20,19 +20,17 @@ function Product(prop) {
     <div>
         {prop.type && 
             <div className="products-content">
-                <img src={prop.imgurl} alt="" data-aos="fade-up"/>
+                <img src={prop.imgurl} alt=""/>
         
                 <div className="products-content-description">
                     <h2 
-                        data-aos="fade-up" 
-                        onMouseOver={handleMouseOver}
-                        onMouseOut={handleMouseOut}
+                        // onMouseOver={handleMouseOver}
+                        // onMouseOut={handleMouseOut}
                     >
                         Product {prop.productNum}
                     </h2>
-                    {isHover && 
-                        <p className='hidden-text'>Description for {prop.productNum}</p>
-                    }
+                    <p>Description for {prop.productNum}</p>
+                    
                 </div>
             </div>
         }
@@ -41,17 +39,14 @@ function Product(prop) {
             <div className="products-content">        
                 <div className="products-content-description">
                     <h2 
-                        data-aos="fade-up" 
-                        onMouseOver={handleMouseOver}
-                        onMouseOut={handleMouseOut}
+                        // onMouseOver={handleMouseOver}
+                        // onMouseOut={handleMouseOut}
                     >
                         Product {prop.productNum}
                     </h2>
-                    {isHover && 
-                        <p className='hidden-text'>Description for {prop.productNum}</p>
-                    }
+                    <p>Description for {prop.productNum}</p>
                 </div>
-                <img src={prop.imgurl} alt="" data-aos="fade-up"/>
+                <img src={prop.imgurl} alt="" />
             </div>
         }
       </div>

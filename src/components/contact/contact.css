@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     color: var(--white-color);
+    font-family: 'Abril Fatface', cursive;
 }
 
 .contact-page form {

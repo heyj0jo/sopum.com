@@ -39,15 +39,12 @@ function Navbar(props) {
           </Link>
         </div>
 
-        <ul className={click ? 'navbar-links active' : 'navbar-links'} style={{backgroundColor:props.bgcolor}}>
+        <ul className={click ? 'navbar-links active' : 'navbar-links'} style={click ? {backgroundColor:props.bgcolor} : {backgroundColor:"transparent"}}>
           <Link to='/about' className='navbar-link navAbout' onClick={refresh}>ABOUT</Link>
           <Link to='/products' className='navbar-link navProducts' onClick={refresh}>PRODUCTS</Link>
           <Link to='/contact' className='navbar-link navContact' onClick={refresh}>CONTACT</Link>
           <Link to='/login' className='navbar-link navLogin' onClick={refresh}>LOGIN</Link>
           {/* <Button>Sign Up</Button> */}
-          <a href='#' className='navbar-social'>
-            <i class="fa-solid fa-hashtag"></i>
-          </a>
         </ul>  
 
         <button className='navbar-button' onClick={handleClick}>

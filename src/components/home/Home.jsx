@@ -30,9 +30,7 @@ function Home() {
             title="Welcome to SoPum"
             textCName="hero-text"
             text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Sunt quia ab ex. Ducimus sequi fugit tenetur magnam iusto 
-            earum distinctio aliquam assumenda soluta dolore aliquid, 
-            consectetur beatae nobis consequuntur suscipit!"
+            Sunt quia ab ex."
         />
         <div className='stat'>
           <p data-aos='fade-up'><span>Top 5% </span>Trend Reader Stationery Store</p>

@@ -45,6 +45,7 @@
 .about-content-description h2, 
 .about-content-description p{
     padding: 2rem 0;
+    font-family: 'Sintony', sans-serif;
 }
 
 @media screen and (max-width: 840px) {
