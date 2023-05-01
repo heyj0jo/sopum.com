@@ -18,7 +18,6 @@ function Hero(props) {
             {props.text}
           </p>
         </div>
-        
     </div>
   )
 }

@@ -23,15 +23,17 @@ function Home() {
           <i className='fa-sharp fa-solid fa-arrow-up'></i> 
         </button>
 
-        <Hero 
-            cName="hero"
-            yesImg={true}
-            heroImg={HomeImg}
-            title="Welcome to SoPum"
-            textCName="hero-text"
-            text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Sunt quia ab ex."
-        />
+        <div className="hero">
+          <img src={HomeImg} alt=""/>
+          <div className="hero-text">
+            <h1 data-aos="fade-up">Welcome to <span>Sopum</span></h1>
+            <p data-aos="fade-up">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Sunt quia ab ex.
+            </p>
+          </div>
+        </div>
+
         <div className='stat'>
           <p data-aos='fade-up'><span>Top 5% </span>Trend Reader Stationery Store</p>
           <div className='bar'></div>
