@@ -51,40 +51,23 @@
     cursor: pointer;
 }
 
-.navbar-link:hover, 
-.navbar-social:hover {
+.navbar-link:hover {
     color: var(--highlight-color);
     text-decoration: underline;
     transition: 0.3s ease-in;
-}
 
-.navAbout:hover {
-    color: var(--about-color);
-}
-
-.navProducts:hover {
-    color: var(--products-color);
-}
-
-.navContact:hover {
-    color: var(--contact-color);
-}
-
-.navLogin:hover {
-    color: var(--login-color);
 }
 
 @media screen and (max-width: 990px) {
     .navbar-container {
-        position: absolute;
         top: 0;
         justify-content: center;
         width: 100%;
         padding: 0;
         height: 100px;
+        background-color: var(--main-color);
     }
     .navbar-links{
-        /* background-color: antiquewhite; */
         display: flex;
         flex-direction: column;
         align-items: center;

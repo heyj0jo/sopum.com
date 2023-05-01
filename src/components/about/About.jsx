@@ -10,9 +10,7 @@ function About() {
   
   return (
     <div>
-      <Navbar 
-        bgcolor = "rgb(180, 72, 22)"
-      />
+      <Navbar/>
       <button className='toTop'onClick={top} >
         <i className='fa-sharp fa-solid fa-arrow-up'></i> 
       </button>  

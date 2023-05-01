@@ -67,7 +67,7 @@ function Contact() {
                 <input type="submit" value="Submit" className='button' />
             </form>
 
-            <div className='socialLinks' data-aos="fade-up">
+            <div className='socialLinks'>
                 <a href="#">
                     <i className="fa-brands fa-instagram"></i>
                 </a>

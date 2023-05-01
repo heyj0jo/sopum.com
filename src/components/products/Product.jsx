@@ -18,7 +18,7 @@ function Product(prop) {
 
   return (
     <div>
-        {prop.type && 
+        {(prop.type || prop.isMobile) &&
             <div className="products-content">
                 <img src={prop.imgurl} alt=""/>
         
@@ -35,7 +35,7 @@ function Product(prop) {
             </div>
         }
 
-        {!prop.type &&
+        {!prop.type && !prop.isMobile &&
             <div className="products-content">        
                 <div className="products-content-description">
                     <h2 
@@ -49,6 +49,8 @@ function Product(prop) {
                 <img src={prop.imgurl} alt="" />
             </div>
         }
+
+
       </div>
     
   )

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
 
-function Navbar(props) {
+function Navbar() {
   const [click, setClick] = useState(false);
   // state = {clicked: false};
 
@@ -18,7 +18,7 @@ function Navbar(props) {
   const [bgcolor, setBgColor] = useState("");
   const changeColor = () => {
     if (window.scrollY >= 500) {
-      setBgColor(props.bgcolor);
+      setBgColor("#054A4A");
     } else {
       setBgColor("transparent");
     }
@@ -39,11 +39,11 @@ function Navbar(props) {
           </Link>
         </div>
 
-        <ul className={click ? 'navbar-links active' : 'navbar-links'} style={click ? {backgroundColor:props.bgcolor} : {backgroundColor:"transparent"}}>
-          <Link to='/about' className='navbar-link navAbout' onClick={refresh}>ABOUT</Link>
-          <Link to='/products' className='navbar-link navProducts' onClick={refresh}>PRODUCTS</Link>
-          <Link to='/contact' className='navbar-link navContact' onClick={refresh}>CONTACT</Link>
-          <Link to='/login' className='navbar-link navLogin' onClick={refresh}>LOGIN</Link>
+        <ul className={click ? 'navbar-links active' : 'navbar-links'} style={click ? {backgroundColor:"#054A4A"} : {backgroundColor:"transparent"}}>
+          <Link to='/about' className='navbar-link' onClick={refresh}>ABOUT</Link>
+          <Link to='/products' className='navbar-link' onClick={refresh}>PRODUCTS</Link>
+          <Link to='/contact' className='navbar-link' onClick={refresh}>CONTACT</Link>
+          <Link to='/login' className='navbar-link' onClick={refresh}>LOGIN</Link>
           {/* <Button>Sign Up</Button> */}
         </ul>  
 

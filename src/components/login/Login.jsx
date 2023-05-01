@@ -34,9 +34,7 @@ function Login() {
 
   return (
     <div className='signup'>
-      <Navbar
-        bgcolor = "rgb(142, 27, 27)"
-      />
+      <Navbar/>
       <form onSubmit={handleSubmit} data-aos="fade-up">
         <h1>Login</h1>
         <label>ID:

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--products-color);
+    background-color: var(--main-color);
     font-family: 'Abril Fatface', cursive;
 }
 
@@ -24,10 +24,7 @@
 .products-text h1 {
     font-size: 4rem;
     letter-spacing: 5px;
-}
-
-.products-text p {
-    font-family: 'Sintony', sans-serif;
+    color: var(--highlight-color);
 }
 
 .products-content {
@@ -46,6 +43,7 @@
     flex-direction: column;
     width: 50%;
     text-align: center;
+    color: var(--highlight-color);
 }
 
 .products-content-description h2 {
@@ -56,3 +54,19 @@
     font-family: 'Sintony', sans-serif;
 }
 
+@media screen and (max-width: 450px){
+    .products-content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .products-content img {
+        margin: 2rem 0;
+        width: 90%;
+    }
+
+    .products-content-description {
+        padding: 2rem 0 3rem 0;
+    }
+}

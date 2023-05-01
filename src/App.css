@@ -3,13 +3,9 @@
   padding: 0;
   box-sizing: border-box; 
   font-family: 'Abril Fatface', cursive;
-  --highlight-color: rgb(193, 21, 21);
+  --highlight-color: #E77B69;
   --white-color: #fff5f0;
-  --main-color: rgb(38, 64, 34);
-  --about-color: rgb(180, 72, 22);
-  --products-color: #e7b100;
-  --contact-color: rgb(34, 42, 64);
-  --login-color: rgb(142, 27, 27);
+  --main-color: #054A4A;
 }
 
 

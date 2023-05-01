@@ -1,13 +1,12 @@
 .signup {
     height: 100vh;
-    background-color: var(--login-color);
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--white-color);
 }
-
 
 
 .signup form {
@@ -19,6 +18,7 @@
 
 .signup h1 {
     padding: 1rem;
+    color: var(--highlight-color);
 }
 
 .signup label {
