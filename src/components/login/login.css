@@ -39,6 +39,11 @@
     margin: 1rem;
 }
 
+.signup .otherbutton {
+    border-bottom: none;
+    font-size: 0.7rem;
+}
+
 .signup .copy {
     position: absolute;
     padding: 1rem;

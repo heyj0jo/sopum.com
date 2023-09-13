@@ -4,14 +4,6 @@ import 'aos/dist/aos.css'
 import './products.css'
 
 function Product(prop) {
-//   const [isHover, setHover] = useState(false);
-//   const handleMouseOver = () => {
-//     setHover(true);
-//   }
-//   const handleMouseOut = () => {
-//     setHover(false);
-//   }
-
   useEffect(()=>{
     AOS.init({duration: 2000});
   }, []);
@@ -23,10 +15,7 @@ function Product(prop) {
                 <img src={prop.imgurl} alt=""/>
         
                 <div className="products-content-description">
-                    <h2 
-                        // onMouseOver={handleMouseOver}
-                        // onMouseOut={handleMouseOut}
-                    >
+                    <h2>
                         Product {prop.productNum}
                     </h2>
                     <p>Description for {prop.productNum}</p>
@@ -38,10 +27,7 @@ function Product(prop) {
         {!prop.type && !prop.isMobile &&
             <div className="products-content">        
                 <div className="products-content-description">
-                    <h2 
-                        // onMouseOver={handleMouseOver}
-                        // onMouseOut={handleMouseOut}
-                    >
+                    <h2>
                         Product {prop.productNum}
                     </h2>
                     <p>Description for {prop.productNum}</p>
